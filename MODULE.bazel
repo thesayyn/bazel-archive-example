@@ -1,6 +1,13 @@
-###############################################################################
-# Bazel now uses Bzlmod by default to manage external dependencies.
-# Please consider migrating your external dependencies from WORKSPACE to MODULE.bazel.
-#
-# For more details, please check https://github.com/bazelbuild/bazel/issues/18958
-###############################################################################
+"example"
+
+module(name = "example")
+
+bazel_dep(name = "rules_proto", version = "6.0.2")
+bazel_dep(name = "protobuf", version = "24.4", repo_name = "com_google_protobuf")
+bazel_dep(name = "toolchains_protoc", version = "0.3.3")
+bazel_dep(name = "rules_python", version = "0.35.0")
+
+bsr = use_extension(":extensions.bzl", "bsr")
+bsr.sync(name = "bsr", lock = "buf.lock.json")
+
+use_repo(bsr, "bsr")

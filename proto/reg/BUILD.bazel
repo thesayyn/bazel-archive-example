@@ -1,0 +1,13 @@
+load("@rules_proto//proto:defs.bzl", "proto_library")
+
+proto_library(
+    name = "reg",
+    srcs = [
+        "reg.proto"
+    ],
+    deps = [
+        "@bsr//buf.build/bufbuild/registry:45ba72cdd47945a5a6ac013716bc38f5",
+        "@bsr//buf.build/protocolbuffers/wellknowntypes:d59b7d45e69d4e129a1b797e2766f067"
+    ],
+    visibility = ["//visibility:public"]
+)

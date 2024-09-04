@@ -1,0 +1,8 @@
+version: v2
+modules:
+  - name: buf.build/mycorp/reg
+    path: proto/reg
+deps:
+  - buf.build/bufbuild/registry:45ba72cdd47945a5a6ac013716bc38f5
+  - buf.build/bufbuild/protovalidate:b983156c5e994cc9892e0ce3e64e17e0
+  - buf.build/protocolbuffers/wellknowntypes

@@ -1,0 +1,33 @@
+{
+    "modules": {
+        "buf.build/mycorp/reg": {
+            "local": "proto/reg",
+            "deps": [
+                "buf.build/bufbuild/registry:45ba72cdd47945a5a6ac013716bc38f5"
+            ]
+        },
+        "buf.build/bufbuild/registry:45ba72cdd47945a5a6ac013716bc38f5": {
+            "remote": "buf.build/bufbuild/registry",
+            "commit": "45ba72cdd47945a5a6ac013716bc38f5",
+            "digest": "b5:5da556eef780c543e85a0b66f0bc79dfec749490bad4ae8770731e03e2cb036be1cd3fe8f6aefc5ea7bde3a1a4f726271b50e989047d8d56adf2b5810e9cf9bf",
+            "deps": [
+                "buf.build/bufbuild/protovalidate:b983156c5e994cc9892e0ce3e64e17e0",
+                "buf.build/protocolbuffers/wellknowntypes:d59b7d45e69d4e129a1b797e2766f067"
+            ]
+        },
+        "buf.build/bufbuild/protovalidate:b983156c5e994cc9892e0ce3e64e17e0": {
+            "remote": "buf.build/bufbuild/protovalidate",
+            "commit": "b983156c5e994cc9892e0ce3e64e17e0",
+            "digest": "b5:a02a4a5a0a9306cf1391d17e8811bbd6a0dbd0e0e29ddfc34b9d103311164974472d43627c3d63e6a8abaffd6c7a301c4f7965bbab2dc56f7f7812429a84b812",
+            "deps": [
+                "buf.build/protocolbuffers/wellknowntypes:d59b7d45e69d4e129a1b797e2766f067"
+            ]
+        },
+        "buf.build/protocolbuffers/wellknowntypes:d59b7d45e69d4e129a1b797e2766f067": {
+            "remote": "buf.build/protocolbuffers/wellknowntypes",
+            "commit": "d59b7d45e69d4e129a1b797e2766f067",
+            "digest": "b5:79d98c29b4fadd41adba4396b9c628daf2db955f7a2cbd8dd00fb21911b31463948b1d2ba4ba202fad034eec23dbf9f56ea3c8dcef5f88e5b85111eadae88359",
+            "deps": []
+        }
+    }
+}
